@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <title>AluraGeek</title>
+</head>
+
+<body>
+  <header class="header__principal">
+    <img src="./image/image Hearts.png">
+    <h1 class="header__title">AluraGeek</h1>
+  </header>
+  <section class="section__father">
+    <div class="section__son_products">
+      <h3 class="section__son_products_title">meus produtos:</h3>
+      <div class="div__products" data-lista>
+
+      </div>
+    </div>
+    <div class="section__son_form">
+      <h3 class="section__son_form_title">Adicionar Produto:</h3>
+      <form class="form" data-formulario>
+        <input class="input__form" name="nome" id="nome" placeholder="nome..." type="text" minlength="3" required data-nome>
+        <input class="input__form" name="valor" id="valor" placeholder="valor..." type="text" required data-valor>
+        <input class="input__form" name="imagem" id="imagem" placeholder="imagem..." type="text" required data-imagem>
+        <div class="div__buttons">
+          <button class="button__form" value="guardar" id="enviar" type="submit" data-botao-enviar>Guardar</button>
+          <button class="button__form" type="button" data-botao-limpar>Limpar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer__section">
+    <div class="footer__div">
+      <img src="./image/image Hearts.png">
+      <h3 class="header__title">AluraGeek</h3>
+    </div>
+    <p>Desenvolvido por Aldemir Junior</p>
+    <p>Alura Latam - 2024</p>
+  </footer>
+  <script src="./js/criaProdutos.js" type="module"></script>
+  <script src="./js/mostrarProduto.js" type="module"></script>
+</body>
+
+</html>
